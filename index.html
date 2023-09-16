@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <!--Page Title-->
+    <title>Kaixin Ji</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/hogan.js/3.0.2/hogan.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.2.0/mustache.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/navigo/8.9.0/navigo.min.js"></script>
+    <script src="assets/js/app.js" defer></script>
+
+    <!--Meta Keywords and Description-->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" title="Favicon"/>
+
+    <!-- Main CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Namari Color CSS -->
+    <link rel="stylesheet" href="assets/css/namari-color.css">
+
+    <!--Icon Fonts - Font Awesome Icons-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <!-- Animate CSS-->
+    <link href="assets/css/animate.css" rel="stylesheet" type="text/css">
+
+    <!--Google Webfonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status" class="la-ball-triangle-path">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+<!--End of Preloader-->
+
+<div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
+    <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
+    <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
+    <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
+    <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
+</div>
+
+<div id="wrapper">
+
+    <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+        <div id="header" class="nav-collapse">
+            <div class="row clearfix">
+                <div class="col-1">
+
+                    <!--Logo-->
+                    <div id="logo">
+
+                        <!--Logo that is shown on the banner-->
+                        <a class="navbar-brand" href="index.html">
+                            <span>
+                              Kaixin Ji
+                            </span>
+                          </a>
+                        <!-- <img src="assets/images/logo.png" id="banner-logo" alt="Landing Page"/> -->
+                        <!--End of Banner Logo-->
+
+                        <!--The Logo that is shown on the sticky Navigation Bar-->
+                        <!-- <img src="assets/images/logo-2.png" id="navigation-logo" alt="Landing Page"/> -->
+                        <!--End of Navigation Logo-->
+
+                    </div>
+                    <!--End of Logo-->
+
+                    <aside>
+
+                        <!--Social Icons in Header-->
+                        <ul class="social-icons">
+                            <li>
+                                <a target="_blank" title="Email" href="mailto:kaixin.ji@student.rmit.edu.au">
+                                    <i class="fa fa-envelope fa-1x"></i><span>Email</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="Google Scholar" href="https://scholar.google.com/citations?user=3MuZZlsAAAAJ&hl=en">
+                                    <i class="fa fa-google fa-1x"></i><span>Google Scholar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="Github" href="https://github.com/kkkkk2017?tab=repositories">
+                                    <i class="fa fa-github fa-1x"></i><span>Github</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/kaixin-ji-361752169">
+                                    <i class="fa fa-linkedin fa-1x"></i><span>LinkedIn</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="Twitter" href="https://x.com/kaixin_ji?s=21">
+                                    <i class="fa fa-twitter fa-1x"></i><span>X(Twitter)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="Instagram" href="https://instagrram.com/kaixin_ji?igshid=OGQ5ZDc2ODk2ZA==">
+                                    <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!--End of Social Icons in Header-->
+
+                    </aside>
+
+                    <!--Main Navigation-->
+                    <nav id="nav-main">
+                        <ul>
+                            <li>
+                                <a href="#banner">About</a>
+                            </li>
+                            <li>
+                                <a href="#research">Research</a>
+                            </li>
+                            <li>
+                                <a href="#experience">Experience</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#education" data-navigo>Education</a>
+                            </li>
+                            <li>
+                                <a href="#gallery">Gallery</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--End of Main Navigation-->
+
+                    <div id="nav-trigger"><span></span></div>
+                    <nav id="nav-mobile"></nav>
+
+                </div>
+            </div>
+        </div><!--End of Header-->
+
+        <!--Banner Content-->
+        <div id="banner-content" class="row clearfix">
+
+            <div class="col-38">
+
+                <div class="section-heading">
+                    <h1>Hi, I'm </br> Kaixin Ji (吉凯昕)</h1>
+                    <h2 class="no-border-h2">PhD Candidate (Data Science), RMIT, Melbourne </h2>
+                    <h2><strong>Keywords: </strong> Cognitive Bias, Information Retrieval, Wearable Sensors, User Study, Data Science
+                    </h2>
+                    <p class="'section-subtitle">
+                    I would use 3 words to describe myself, <strong>"Hybrid, Collaborative, Independent"</strong>. My research topic looks at users' cognitive bias in the interactive information seeking with physiological sensing. 
+                    The physiological data include brain activity, electrodermal activity, eye, motion, etc. 
+                    I enjoy doing multi-disciplinary and human-centered research. And I often collaborate with different people. Don't hesitate to connect with me.
+                    </br>Outside of academia, I also like to explore various hobbies, including cooking, photography, vlogs, badminton, golf, and figure skating. Besides, I play the Chinese Harp (Guzheng) and now learning Guqing. </p>
+                    <h2></h2>
+                    <!-- <p><strong>Supervisors:</strong> Dr. Damiano Spina, Prof. Falk Scholer, Dr. Danula Hettiachchi, Prof. Flora Salim</p> -->
+                </div>
+
+            </div>
+
+        </div><!--End of Row-->
+    </header>
+
+    <!--Main Content Area-->
+    <main id="content">
+        
+                <!--research-->
+                <section id="research" class="scrollto clearfix">
+                    <div class="row clearfix">
+        
+                        <div class="col-3">
+        
+                            <div class="section-heading">
+                                <h2 class="section-title">Research</h2>
+                            </div>
+        
+                        </div>
+
+                        <!-- <div class="col-2-3">
+
+                            </div>
+
+                            <a href="#" class="col-3">
+                                <div class="client-overlay"><span>Tree</span></div>
+                            </a>
+                            <a href="#" class="col-3">
+                                <div class="client-overlay"><span>Fingerprint</span></div>
+                            </a>
+                            <a href="#" class="col-3">
+                                <div class="client-overlay"><span>The Man</span></div>
+                            </a>
+                            <a href="#" class="col-3">
+                                <div class="client-overlay"><span>Mustache</span></div>
+                            </a>
+                            <a href="#" class="col-3">
+                                <div class="client-overlay"><span>Goat</span></div>
+                            </a>
+                            <a href="#" class="col-3">
+                                <div class="client-overlay"><span>Justice</span></div>
+                            </a>
+                            <a href="#" class="col-3">
+                                <div class="client-overlay"><span>Ball</span></div>
+                            </a>
+                            <a href="#" class="col-3">
+                                <div class="client-overlay"><span>Cold</span></div>
+                            </a>
+        
+                            <a href="#" class="col-3">
+                                <div class="client-overlay"><span>Cold</span></div>
+                            </a>
+        
+                        </div> -->
+        
+                    </div>
+                </section>
+                <!--End of research-->
+
+                 <!--Experience-->
+                 <section id="experience" class="scrollto clearfix">
+                    <div class="row clearfix">
+        
+                        <div class="col-3">
+        
+                            <div class="section-heading">
+                                <h2 class="section-title">Experience</h2>
+                            </div>
+        
+                        </div>
+        
+                    </div>
+                </section>
+                <!--End of Experience-->
+
+
+                <!--Education-->
+                <section id="education" class="scrollto clearfix">
+                <div class="row clearfix">
+    
+                    <div class="col-3">
+    
+                        <div class="section-heading">
+                            <h2 class="section-title">Education</h2>
+                        </div>
+    
+                    </div>
+    
+                </div>
+                </section>
+                <!--End of Education-->
+
+
+        <!--Gallery-->
+        <aside id="gallery" class="row text-center scrollto clearfix" data-featherlight-gallery
+                 data-featherlight-filter="a">
+
+                <!-- <a href="assets/images/gallery-images/gallery-image-1.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                   data-wow-delay="0.1s"><img src="images/gallery-images/gallery-image-1.jpg" alt="Landing Page"/></a>
+                <a href="assets/images/gallery-images/gallery-image-2.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                   data-wow-delay="0.3s"><img src="images/gallery-images/gallery-image-2.jpg" alt="Landing Page"/></a>
+                <a href="assets/images/gallery-images/gallery-image-3.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                   data-wow-delay="0.5s"><img src="images/gallery-images/gallery-image-3.jpg" alt="Landing Page"/></a>
+                <a href="assets/images/gallery-images/gallery-image-4.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                   data-wow-delay="1.1s"><img src="images/gallery-images/gallery-image-4.jpg" alt="Landing Page"/></a>
+                <a href="assets/images/gallery-images/gallery-image-5.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                   data-wow-delay="0.9s"><img src="images/gallery-images/gallery-image-5.jpg" alt="Landing Page"/></a>
+                <a href="assets/images/gallery-images/gallery-image-6.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                   data-wow-delay="0.7s"><img src="assets/images/gallery-images/gallery-image-6.jpg" alt="Landing Page"/></a>
+
+                <a href="#" data-videoid="UYJ5IjBRlW8" data-videosite="youtube" class="button video link-lightbox">
+                    WATCH VIDEO <i class="fa fa-play" aria-hidden="true"></i>
+                </a> -->
+
+        </aside>
+        <!--End of Gallery-->
+
+    </main>
+    <!--End Main Content Area-->
+
+
+    <!--Footer-->
+    <footer id="landing-footer" class="clearfix">
+        <div class="row clearfix">
+
+            <!-- <p id="copyright" class="col-2">Made with love by <a href="https://www.shapingrain.com">ShapingRain</a></p> -->
+            <p id="copyright" class="col-2"></p>
+
+
+                <!--Social Icons in Header-->
+                <ul class="col-2 social-icons">
+                    <li>
+                        <a target="_blank" title="Email" href="mailto:kaixin.ji@student.rmit.edu.au">
+                            <i class="fa fa-envelope fa-1x"></i><span>Email</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" title="Google Scholar" href="https://scholar.google.com/citations?user=3MuZZlsAAAAJ&hl=en">
+                            <i class="fa fa-google fa-1x"></i><span>Google Scholar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" title="Github" href="https://github.com/kkkkk2017?tab=repositories">
+                            <i class="fa fa-github fa-1x"></i><span>Github</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/kaixin-ji-361752169">
+                            <i class="fa fa-linkedin fa-1x"></i><span>LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" title="Twitter" href="https://x.com/kaixin_ji?s=21">
+                            <i class="fa fa-twitter fa-1x"></i><span>X(Twitter)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" title="Instagram" href="https://instagrram.com/kaixin_ji?igshid=OGQ5ZDc2ODk2ZA==">
+                            <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
+                        </a>
+                    </li>
+                </ul>
+                <!--End of Social Icons in Header-->
+        </div>
+    </footer>
+    <!--End of Footer-->
+
+</div>
+
+<!-- Include JavaScript resources -->
+<script src="assets/js/jquery.1.8.3.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/featherlight.min.js"></script>
+<script src="assets/js/featherlight.gallery.min.js"></script>
+<script src="assets/js/jquery.enllax.min.js"></script>
+<script src="assets/js/jquery.scrollUp.min.js"></script>
+<script src="assets/js/jquery.easing.min.js"></script>
+<script src="assets/js/jquery.stickyNavbar.min.js"></script>
+<script src="assets/js/jquery.waypoints.min.js"></script>
+<script src="assets/js/images-loaded.min.js"></script>
+<script src="assets/js/lightbox.min.js"></script>
+<script src="assets/js/site.js"></script>
+    
+</body>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', async function() {
+       // Fetch the external template
+       const response = await fetch('/templates/research.mustache');
+       const template = await response.text();
+
+       const profileData = {
+        publications: [
+                    {
+                        title: "Designing and Evaluating Presentation Strategies for Fact-Checked Content",
+                        conference: "Proceedings of the 32nd ACM International Conference on Information and Knowledge Management",
+                        year: 2023,
+                        authors: "Danula Hettiachchi, Kaixin Ji, Jenny Kennedy, Anthony McCosker, Flora Dylis Salim, Mark Sanderson, Falk Scholer, Damiano Spina",
+                        link: "https://scholar.google.com.au/citations?view_op=view_citation&hl=en&user=3MuZZlsAAAAJ&citation_for_view=3MuZZlsAAAAJ:qjMakFHDy7sC",
+                        abstract: "",
+                    },     
+                    { title: "Quantifying and Measuring Confirmation Bias in Information Retrieval Using Sensors",
+                    conference: "Adjunct Proceedings of UbiComp/ISWC 2023",
+                    year: 2023,
+                    authors: "Kaixin Ji",
+                    link:"https://scholar.google.com/citations?user=3MuZZlsAAAAJ&hl=en",
+                    abstract: "" },   
+                    { title: "Towards Detecting Tonic Information Processing Activities with Physiological Data",
+                    conference: "Adjunct Proceedings of UbiComp/ISWC 2023",
+                    year: 2023,
+                    authors: "Kaixin Ji, Damiano Spina, Danula Hettiachchi, Flora Salim, and Falk Scholer",
+                    link:"https://scholar.google.com.au/citations?view_op=view_citation&hl=en&user=3MuZZlsAAAAJ&citation_for_view=3MuZZlsAAAAJ:UeHWp8X0CEIC",
+                    abstract: "" },       
+                    { title: "Examining the Impact of Uncontrolled Variables on Physiological Signals in User Studies for Information Processing Activities", 
+                    authors: "Kaixin Ji, Damiano Spina, Danula Hettiachchi, Flora Salim, and Falk Scholer",
+                    year: 2023,
+                    conference: " Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval.",
+                    link: "https://dl.acm.org/doi/10.1145/3539618.3591981",
+                    abstract: "" },
+                    
+                ],
+       }
+
+       profileData.publications.sort((a, b) => a.year - b.year);
+
+       // Render the template
+       const compiled = Hogan.compile(template);
+       const rendered = compiled.render(profileData);
+    //    const renderedProfile = Mustache.render(template, profileData);
+
+       // Insert the rendered template into the DOM
+       document.getElementById('research').innerHTML = rendered;
+    });
+
+
+    document.addEventListener('DOMContentLoaded', async function() {
+       // Fetch the external template
+       const response = await fetch('/templates/experience.mustache');
+       const exptemplate = await response.text();
+
+       const experienceData = {
+        work: [{
+                year: 2023,
+                teach: [
+                    { title: "Guest Lecture", 
+                    company: "RMIT",
+                    description: ["Eye-tracking for Online Buyer Behaviours"]
+                },
+                ]
+            },
+            { year: 2022,
+                teach:  [
+                    { title: "Research Assistant", 
+                    company: "RMIT",
+                    starttime: "Sept.",
+                    endtime: "Dec. 2022",
+                    description: ["Project: understanding user’s information disclosure behavioural in emotions and contexts"]
+                },
+                    { title: "Teaching Assistant", 
+                        company: "RMIT",
+                        starttime: "June",
+                        endtime: "Nov.",
+                        description: ["Building IT System (IT-product development cycles)"]
+                    },
+                    { title: "Teaching Assistant", 
+                        company: "RMIT",
+                        starttime: "June",
+                        endtime: "July",
+                        description: ["Programming Bootcamp 1 (essential JAVA)", "Programming Bootcamp 2 (essential Python) "]
+                    },
+                    ],
+            },
+        {
+            year: 2019,
+            teach: [
+                {
+                    title: "Software Intern",
+                    company: "YourAnswer.io",
+                    starttime: "April",
+                    endtime: "November",
+                    description: ['Project: Developing the backend software for customer reporting console using Python and Apache Spark (Big Data Framework), deployed on AWS EMR. The console interacted with AWS S3, and was tested with both UnitTest and Coverage Test. The programming environment was on Ubuntu.'],
+                }
+            ]
+
+        }
+        
+        ],
+            others: [
+                {year: 2023,
+                other: [
+            { title: "The Web Search Revolution Event (Organising Committee)", 
+                link: "https://www.admscentre.org.au/event/web-search-revolution/",
+                time: "Aug.",
+                description: ""
+            },
+            { title: "Turing TIN Data Study Group", 
+                link: "https://www.turing.ac.uk/events/turing-tin-data-study-group-february-2023",
+                time: "Feb.",
+                description: "| Project: Defining Wild Places across the UK using Social and Physical Datasets (The John Muir Trust)"
+            },
+            {
+                title: "ADM+S summer school",
+                link: "",
+                time: "Feb.",
+                description: "",
+            },]},
+            {year: 2022,
+            other: [
+            {
+                title: "CIDDA CReD Research Day (Organising Committee)",
+                link: "https://rmit-ir.github.io/cred/",
+                time: "Nov.",
+                description: "",
+            },
+            {
+                title: "ADM+S Dark-Ad Hackathon",
+                link: "https://www.admscentre.org.au/darkads-hackathon/",
+                time: "Nov. ",
+                description: "",
+            },]}
+            ],
+            }
+
+       // Render the template
+       const compiled = Hogan.compile(exptemplate);
+       const rendered = compiled.render(experienceData);
+
+       // Insert the rendered template into the DOM
+       document.getElementById('experience').innerHTML = rendered;
+    });
+ 
+    document.addEventListener('DOMContentLoaded', async function() {
+       // Fetch the external template
+       const response = await fetch('/templates/education.mustache');
+       const edutemplate = await response.text();
+
+       const educationData = {
+        educations: [
+        {
+            program: "PhD (Computer Science)",
+            school: "RMIT",
+            duration: "March 2020 - 2026",
+            description: []
+       },
+        {
+            program: "Master of IT (Human-Computer Interaction)",
+            school: "The University of Melbourne",
+            duration: "March 2020 – July 2021",
+            description: ['Main Subjects: Usability Testing, Fieldwork For Design, Distributed System, Web technologies']
+       },
+       {
+            program: "Bachelor of IT (Software Development)",
+            school: "The University of South Australia",
+            duration: "February 2017 – December 2019",
+            description: ['Main Subjects: System Design, Artificial Intelligent', 'Unisa International Merit Scholarship 2017']
+       },
+    
+    
+    ]   
+        }
+
+       // Render the template
+       const compiled = Hogan.compile(edutemplate);
+       const rendered = compiled.render(educationData);
+
+       // Insert the rendered template into the DOM
+       document.getElementById('education').innerHTML = rendered;
+    });
+ 
+ 
+ </script>
+
+</html>

@@ -1,0 +1,59 @@
+
+<section id="experience" class="scrollto clearfix wow fadeInUp" data-wow-delay="0.1s">
+    <div class="row clearfix">
+
+        <div class="col-3">
+
+            <div class="section-heading">
+                <h2 class="section-title">Experience</h2>
+            </div>
+
+        </div>
+
+        <div class="col-2-3">
+            {{#work}}
+                <div class="col-9-10  wow fadeInUp" data-wow-delay="0.3s">
+                <h4 class="link-title"> {{year}} </h4>
+                {{#teach}}
+                <div>
+                <h5><strong>{{title}} ({{company}})</strong></h5>
+                    <div class="link-content">
+                    {{#description}}
+                        <span>{{.}}</span><br>
+                    {{/description}}
+                    </br>
+                    </div>
+                </div>
+                {{/teach}}
+                </div>
+            {{/work}}
+        </div>
+    </div>
+
+
+</section>
+
+<section id="experience" class="scrollto clearfix wow fadeInUp" data-wow-delay="0.1s">
+    <div class="row clearfix">
+
+        <div class="col-3">
+
+            <div class="section-heading">
+                <h2 class="section-title">Other Experience</h2>
+            </div>
+
+        </div>
+
+        <div class="col-2-3">
+        {{#others}}
+            <div class="col-9-10 wow fadeInUp" data-wow-delay="0.3s">
+            <h4 class="link-title"> {{year}} </h4>
+            {{#other}}
+                <p><a class="experience_link" href={{link}}><strong>{{title}}</strong></a>
+                    {{description}}
+                </p>
+            {{/other}}
+            </div>
+        {{/others}}
+    </div>
+    </section>

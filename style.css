@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ... existing code ... */
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+}
+
+.bar {
+    background-color: #333;
+    height: 3px;
+    width: 25px;
+    margin: 3px;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+    .nav-list ul {
+        width: 100%;
+        flex-direction: column;
+        display: none;
+    }
+    .nav-list ul li {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-list ul li a {
+        width: 100%;
+    }
+}
+
+/* .media-container img, .media-container video {
+    max-width: 100%;
+    margin: 10px;
+} */

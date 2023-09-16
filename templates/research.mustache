@@ -1,0 +1,25 @@
+<section id="research" class="scrollto clearfix wow fadeInUp" data-wow-delay="0.1s">
+    <div class="row clearfix">
+
+        <div class="col-3">
+
+            <div class="section-heading">
+                <h2 class="section-title">Research</h2>
+            </div>
+
+        </div>
+
+        <div class="col-2-3">
+            {{#publications}}
+            <div class="col-9-10 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="research-overlay">
+                <h4><a href={{link}} class="link-title">{{title}}</a></h4>
+                <p class="link-content">{{authors}} ({{year}})
+                <br>{{conference}}</p>
+                <p>{{abstract}}</p>
+                </div>
+                </div>
+            {{/publications}}
+        </div>
+    </div>
+</section>
