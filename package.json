@@ -2,7 +2,7 @@
   "name": "kaixin-site",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
@@ -16,6 +16,7 @@
   "license": "ISC",
   "devDependencies": {},
   "dependencies": {
+    "compression": "^1.7.4",
     "express": "^4.18.2",
     "hogan.js": "^3.0.2",
     "navigo": "^8.11.1"
