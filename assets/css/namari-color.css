@@ -95,7 +95,7 @@ a:hover, #header.nav-solid nav a:hover {
     display:block;
     width:30px;
     height:5px;
-    margin-top:10px;
+    margin-top:30px;
 }
 
 .no-border-h2:after {
@@ -129,8 +129,8 @@ a:hover, #header.nav-solid nav a:hover {
 /* Banner Background and Text Colors */
 
 #banner {
-    background: url("../images/banner-images/banner-image-1.jpg") no-repeat center top;
-    background-size:cover;
+    background: url("/assets/images/photo.png") no-repeat center top;
+    background-size: cover;
 }
 
 
