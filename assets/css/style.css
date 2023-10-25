@@ -491,6 +491,29 @@ section {
   color: #fff;
 }
 
+/* --------- 2.4 trophy ---------- */
+
+.trophy {
+  cursor: pointer;
+  position: relative;
+}
+
+.trophy:hover::after {
+  content: attr(data-award);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
 
 /* --------- 2.4 Navigation ---------- */
 

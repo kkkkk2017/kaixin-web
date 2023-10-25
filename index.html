@@ -154,11 +154,12 @@
 
                 <div class="section-heading">
                     <h1>Hi, I'm </br> Kaixin Ji (吉凯昕)</h1>
+                    <p><strong>"Hybrid, User-Centered, Collaborative"</strong></p>
                     <h2 class="no-border-h2">PhD Candidate (Data Science), RMIT & ADM+S (ARC Centre of Excellence for Automated Decision-Making and Society) </h2>
                     <h2><strong>Keywords: </strong> Cognitive Bias, Interactive Information Retrieval, Wearable Sensors, User Study
                     </h2>
                     <p class="'section-subtitle">
-                    <strong>"Hybrid, Collaborative, Independent"</strong>, I would use 3 words to describe myself. My research topic looks at users' cognitive bias in the interactive information seeking with physiological sensing. 
+                    My research topic is about measursing users' cognitive bias in the interactive information seeking with multi-modal physiological sensing. 
                     The physiological data include brain activity, electrodermal activity, eye, motion, etc. 
                     I enjoy doing multi-disciplinary and human-centered research. And I often collaborate with different people. Don't hesitate to connect with me.
                     </br>Outside of academia, I also like to explore various hobbies, including cooking, photography, vlogs, badminton, golf, and figure skating. Besides, I play the Chinese Harp (Guzheng) and now learning Guqing. </p>
@@ -224,7 +225,12 @@
                     </div>
                 </section>
                 <!--End of research-->
-
+                <section>
+                <div id="detailedViewContainer" style="display: none;">
+                    <!-- The detailed view of a selected publication will be rendered here -->
+                    <button id="backButton">Back to List</button>
+                </div>
+            </section>
                  <!--Experience-->
                  <section id="experience" class="scrollto clearfix">
                     <div class="row clearfix">
@@ -361,44 +367,86 @@
        const profileData = {
         publications: [
                     {
-                        title: "Designing and Evaluating Presentation Strategies for Fact-Checked Content",
-                        conference: "Proceedings of the 32nd ACM International Conference on Information and Knowledge Management",
+                        title: "ZzzGPT: An Interactive GPT Approach to Enhance Sleep Quality",
+                        conference: "UbiComp/ISWC 2023 Student Challenge (available soon)",
                         year: 2023,
+                        hasTrophy: true,
+                        awardName: "Student Challenge Award",
+                        awardLink: "https://www.ubicomp.org/ubicomp-iswc-2023/awards/ubicomp-iswc-2023-awards/",
+                        authors: "Yonchanok Khaokaew, Thuc Hanh Nguyen, Kaixin Ji, Hiruni Kegalle, and Marwah Alaofi",
+                        link: "https://www.ubicomp.org/ubicomp-iswc-2023/awards/ubicomp-iswc-2023-awards/",
+                        abstract: "",
+                    },  
+                    {
+                        title: "Designing and Evaluating Presentation Strategies for Fact-Checked Content",
+                        conference: "(CIKM) Proceedings of the 32nd ACM International Conference on Information and Knowledge Management",
+                        year: 2023,
+                        hasTrophy: false,
                         authors: "Danula Hettiachchi, Kaixin Ji, Jenny Kennedy, Anthony McCosker, Flora Salim, Mark Sanderson, Falk Scholer, Damiano Spina",
                         link: "https://scholar.google.com.au/citations?view_op=view_citation&hl=en&user=3MuZZlsAAAAJ&citation_for_view=3MuZZlsAAAAJ:qjMakFHDy7sC",
                         abstract: "",
                     },     
                     { title: "Quantifying and Measuring Confirmation Bias in Information Retrieval Using Sensors",
-                    conference: "Adjunct Proceedings of UbiComp/ISWC 2023",
+                    conference: "(UbiComp DC) Adjunct Proceedings of UbiComp/ISWC 2023",
                     year: 2023,
+                    hasTrophy: false,
                     authors: "Kaixin Ji",
-                    link:"https://scholar.google.com/citations?user=3MuZZlsAAAAJ&hl=en",
+                    link:"https://dl.acm.org/doi/abs/10.1145/3594739.3610765",
                     abstract: "" },   
                     { title: "Towards Detecting Tonic Information Processing Activities with Physiological Data",
-                    conference: "Adjunct Proceedings of UbiComp/ISWC 2023",
+                    conference: "(UbiComp Poster) Adjunct Proceedings of UbiComp/ISWC 2023",
                     year: 2023,
+                    hasTrophy: true,
+                    awardName: "Best Poster Award",
+                    awardLink: "https://www.ubicomp.org/ubicomp-iswc-2023/awards/ubicomp-iswc-2023-awards/",
                     authors: "Kaixin Ji, Damiano Spina, Danula Hettiachchi, Flora Salim, and Falk Scholer",
-                    link:"https://scholar.google.com.au/citations?view_op=view_citation&hl=en&user=3MuZZlsAAAAJ&citation_for_view=3MuZZlsAAAAJ:UeHWp8X0CEIC",
+                    link:"https://dl.acm.org/doi/abs/10.1145/3594739.3610679",
                     abstract: "" },       
                     { title: "Examining the Impact of Uncontrolled Variables on Physiological Signals in User Studies for Information Processing Activities", 
                     authors: "Kaixin Ji, Damiano Spina, Danula Hettiachchi, Flora Salim, and Falk Scholer",
                     year: 2023,
-                    conference: " Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval.",
+                    hasTrophy: false,
+                    conference: "(SIGIR) Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval.",
                     link: "https://dl.acm.org/doi/10.1145/3539618.3591981",
+                    abstract: "" },
+                    { title: "Individual and group-wise classroom seating experience: Effects on student engagement in different courses", 
+                    authors: "Nan Gao, Mohammad Saiedur Rahaman, Wei Shao, Kaixin Ji, Flora Salim",
+                    year: 2022,
+                    hasTrophy: false,
+                    conference: "(Ubicomp) Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies.",
+                    link: "https://dl.acm.org/doi/abs/10.1145/3550335",
                     abstract: "" },
                     
                 ],
        }
 
-       profileData.publications.sort((a, b) => a.year - b.year);
+    //    profileData.publications.sort((a, b) => a.year - b.year);
 
        // Render the template
        const compiled = Hogan.compile(template);
        const rendered = compiled.render(profileData);
-    //    const renderedProfile = Mustache.render(template, profileData);
 
        // Insert the rendered template into the DOM
        document.getElementById('research').innerHTML = rendered;
+
+    //    // Event listener for publication links
+    //     const publicationLinks = document.querySelectorAll('.link-title');
+    //     publicationLinks.forEach(link => {
+    //         link.addEventListener('click', function(event) {
+    //             event.preventDefault();
+    //             const selectedPublication = profileData.publications.find(pub => pub.link === this.getAttribute('href'));
+
+    //             // Render and display detailed view for the selected publication
+    //             // For the sake of simplicity, I'm using the same template. You might want to have a separate template for detailed views.
+    //             const detailedHtml = Mustache.render(template, { publications: [selectedPublication] });
+    //             document.querySelector('#detailedViewContainer').innerHTML = detailedHtml;
+
+    //             // Hide the main list and show the detailed view
+    //             document.querySelector('#research').style.display = 'none';
+    //             document.querySelector('#detailedViewContainer').style.display = 'block';
+    //         });
+    //     });
+
     });
 
 
@@ -411,16 +459,16 @@
         work: [{
                 year: 2023,
                 teach: [
+                { title: "Guest Lecture", 
+                    company: "RMIT",
+                    description: ["Geospatial Programming (python): Tips for Complex Data Analysis", "Eye-tracking for Online Buyer Behaviours"]
+                },
                 { title: "Teaching Assistant", 
                         company: "RMIT",
                         starttime: "June",
                         endtime: "Nov.",
                         description: ["Advance Programing for Data Science (python)"]
                     }, 
-                    { title: "Guest Lecture", 
-                    company: "RMIT",
-                    description: ["Eye-tracking for Online Buyer Behaviours"]
-                },
                 ]
             },
             { year: 2022,
@@ -433,15 +481,7 @@
                 },
                     { title: "Teaching Assistant", 
                         company: "RMIT",
-                        starttime: "June",
-                        endtime: "Nov.",
-                        description: ["Building IT System (IT-product development cycles)"]
-                    },
-                    { title: "Teaching Assistant", 
-                        company: "RMIT",
-                        starttime: "June",
-                        endtime: "July",
-                        description: ["Programming Bootcamp 1 (essential JAVA)", "Programming Bootcamp 2 (essential Python) "]
+                        description: ["Programming Bootcamp 1 (essential JAVA)", "Programming Bootcamp 2 (essential Python)", "Building IT System (IT-product development cycles)", ]
                     },
                     ],
             },
