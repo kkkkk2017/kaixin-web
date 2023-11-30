@@ -134,12 +134,16 @@ a:hover, #header.nav-solid nav a:hover {
 }
 
 
-.round-headshot {
-    width: 100px; /* Adjust the size as needed */
-    height: 100px; /* Make sure width and height are the same for a perfect circle */
-    border-radius: 50%; /* This creates the round shape */
-    object-fit: cover; /* This ensures the image covers the area without stretching */
+/* handling phones and small screens */
+@media only screen and (max-width: 1024px) {
+    #banner {
+        width: 100px; /* Adjust the size as needed */
+        height: 100px; /* Make sure width and height are the same for a perfect circle */
+        border-radius: 50%; /* This creates the round shape */
+        object-fit: cover; /* This ensures the image covers the area without stretching */
+    }
 }
+
 
 /*------------------------------------------------------------------------------------------*/
 /* 5. Typography */
