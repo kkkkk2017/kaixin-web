@@ -30,6 +30,30 @@
 /* 1. Defaults & Reset of specific styles across browsers */
 /*------------------------------------------------------------------------------------------*/
 
+#banner {
+  background: url("/assets/images/photo.png") no-repeat center top;
+  background-size: cover;
+}
+
+.profile-photo{
+  display: none; 
+}
+
+
+.mycontainer {
+  display: flex;
+  justify-content: center;
+}
+
+/* Using text-align */
+.mycontainer {
+  text-align: center;
+}
+/* .profile-photo {
+  display: none;
+} */
+
+
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2204,6 +2228,8 @@ blockquote {
   #banner-content.row {
       padding-top: 65px !important;
   }
+
+
 
   /*-----------------Sections-----------------*/
 

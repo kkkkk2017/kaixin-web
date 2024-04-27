@@ -29,6 +29,25 @@
 }
 
 @media (max-width: 768px) {
+    #banner {
+        background: none;  /* Remove the background image */
+    }
+
+    .profile-photo {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        align-items: center;
+        margin: auto;
+    }
+
+    .profile-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
     .info_section .col-md-3 {
         text-align: center;
@@ -70,6 +89,14 @@
 }
 
 @media (max-width: 576px) {
+    #banner {
+        background: none; /* Remove the background image */
+    }
+
+    .profile-photo {
+        display: inline-block; 
+    }
+
     .slider_section .detail-box h1 {
         font-size: 3.5rem;
     }
@@ -82,6 +109,26 @@
 @media (max-width: 480px) {}
 
 @media (max-width: 420px) {
+    #banner {
+        background: none; /* Remove the background image */
+    }
+
+    .profile-photo {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        align-items: center;
+        margin: auto;
+    }
+
+    .profile-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     .slider_section .detail-box h2 {
         font-size: 1.5rem;
     }
