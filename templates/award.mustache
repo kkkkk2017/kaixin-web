@@ -10,20 +10,24 @@
         </div>
 
         <div class="col-2-3">
-            {{#award}}
+            {{#awards}}
             <div class="col-9-10 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="research-overlay">
                     <p>{{title}}</p></br>
                 </div>
                 </div>
-            {{/award}}
-            {{#service}}
+            {{/awards}}
+            
+            {{#services}}
                 <div class="col-9-10 wow fadeInUp" data-wow-delay="0.3s">
+                <h4 class="link-title">Invited Reviewer & Sub-reviewer</h4>
                 <div class="research-overlay">
-                    <p>{{title}}</p>
+                     {{#title}}
+                        <span>{{.}}</span><br>
+                    {{/title}}
                 </div>
                 </div>
-            {{/service}}
+            {{/services}}
         </div>
     </div>
 </section>
