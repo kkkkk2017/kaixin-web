@@ -252,7 +252,7 @@ section {
 
 [class*='col-'] {
   float: left;
-  padding: 20px;
+  padding: 10px;
 }
 
 #clients .col-2-3 [class*='col-'] {
