@@ -394,7 +394,7 @@
                         year: 2025,
                         hasTrophy: false,
                         authors: "Kaixin Ji, Danula Hettiachchi, Falk Scholer, Flora D Salim, Damiano Spina",
-                        link: "https://arxiv.org/abs/2507.14792",
+                        link: "https://dl.acm.org/doi/10.1145/3749501",
                         abstract: "",
                     }, 
             {title: "Towards Detecting and Mitigating Cognitive Bias in Spoken Conversational Search",
@@ -511,11 +511,27 @@
        const exptemplate = await response.text();
 
        const experienceData = {
-        work: [{
+        work: [
+            {
+                year: 2025,
+                teach: [
+                    {title: "Usability Lab Manager",
+                        company: "RMIT",
+                    description: "",
+                    },
+                { title: "Tutor", 
+                        company: "RMIT",
+                        starttime: "March 2025",
+                        endtime: "June 2025",
+                        description: ["Practical Data Science with Python", "Programming Fundamentals for Scientists", "Data Mining"]
+                    }, 
+                ]
+            },
+            {
                 year: 2024,
                 teach: [
                     {title: "Usability Lab Manager",
-                        company: "RMIT CIDDA",
+                        company: "RMIT",
                     description: "",
                     },
                 { title: "Tutor", 
@@ -529,7 +545,7 @@
                 year: 2023,
                 teach: [
                     {title: "Usability Lab Manager",
-                        company: "RMIT CIDDA",
+                        company: "RMIT",
                     description: "",
                     },
                 { title: "Guest Lecture", 
@@ -576,6 +592,12 @@
             others: [
                  {year: 2025,
                     other: [
+                        {
+                        title: "Ubicomp/ISWC'25 (Student Volunteer)",
+                        link: "https://www.ubicomp.org/ubicomp-iswc-2025/",
+                        time: "Oct.",
+                        description: "",
+                    },
                     {
                         title: "CHIIR'25 (Student Volunteer co-Chair)",
                         link: "https://chiir2025.github.io/",
@@ -592,6 +614,12 @@
                     //     time: "April",
                     //     description: ""
                     // },
+                    {
+                        title: "Ubicomp/ISWC'24 (Student Volunteer)",
+                        link: "https://www.ubicomp.org/ubicomp-iswc-2024/",
+                        time: "Oct.",
+                        description: "",
+                    },
                     { title: "Advancing Physiological Methods In Human-Information Interaction Workshop (Upcomp/ISWC'24 Organiser)", 
                         link: "https://hii-biosignal.github.io/ubi24/",
                         time: "Oct.",
