@@ -21,11 +21,11 @@
         <div class="col-9-10 wow fadeInUp" data-wow-delay="0.3s">
            <h4 class="link-title">Invited Reviewer & Sub-reviewer</h4>
             {{#services}}
+                {{#title}}
                 <div class="research-overlay">
-                     {{#title}}
-                        <span>{{.}}</span><br>
-                    {{/title}}
+                    <span>{{.}}</span><br>
                 </div>
+                {{/title}}
             {{/services}}
         </div>
         </div>
