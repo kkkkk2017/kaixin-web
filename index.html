@@ -171,7 +171,7 @@
                 My thesis aims to measure users' information behaviors and cognitive bias in interactive information-seeking with multi-modal sensing. 
                         The sensing data includes physiological data, e.g, EEG for brain activity, Electrodermal Activity (EDA) and Blood Volume Pulse (BVP) for peripheral activity, and eye-tracking data, etc. 
                     </br>
-                    As the Lab Manager of the RMIT CiDDA Usability Lab, 
+                    As the Lab Manager of the RMIT Usability Lab, 
                     I have experience in designing, implementing, and conducting various user studies,
                     e.g., workshops, lab studies with computer tasks or simulated videos, and field studies on e-scooters.
                 </p>
@@ -212,20 +212,6 @@
                         <div class="col-3">
                             <div class="section-heading">
                                 <h2 class="section-title">Awards, Grants & Academic Services</h2>
-                                <ul>
-                                    <li>2025 Gary Marsden Travel Award @ ACM SIGCHI</li>
-                                    <li>2025 The Chinese Government Award for Outstanding Self-financed Students Abroad @ China Scholarship Council</li>
-                                    <li>2024 Best Poster @ RMIT School of Computing Technologies Doctoral Colloquium</li>
-                                    <li>2024 Special Service Award @ MobileHCI</li>
-                                    <li>2024 Google Conference Scholarships(APAC)</li>
-                                    <li>2023 People's Choice Poster @ RMIT/UniMelb 25+ Years of Information Retrieval Anniversary</li>
-                                    <li>2023 Best Poster Paper @ Ubicomp</li>
-                                    <li>2023 Ubicomp Student Challenge</li>
-                                    <li>2022 Runner-up (group) of Bushfire Grand Challenge Masterclass @ CSIRO Data61</li>
-                                 </ul>
-                            <ul>
-                             CHI, MobileHCI, SIGIR, TOIS, CHIIR
-                             </ul>
                             </div>
                         </div>
                     </div>
@@ -487,6 +473,35 @@
     //             document.querySelector('#detailedViewContainer').style.display = 'block';
     //         });
     //     });
+
+    });
+
+
+    
+    document.addEventListener('DOMContentLoaded', async function() {
+       // Fetch the external template
+       const response = await fetch('/templates/award.mustache');
+       const template = await response.text();
+
+       const profileData = {
+        awards: [{title: "2025 Gary Marsden Travel Award @ ACM SIGCHI",},
+                {title: "2025 The Chinese Government Award for Outstanding Self-financed Students Abroad @ China Scholarship Counci;",},
+                {title: "2024 Best Poster @ RMIT School of Computing Technologies Doctoral Colloquium",},
+                {title: "2024 Special Service Award @ MobileHCI",},
+                {title: "2024 Google Conference Scholarships(APAC)",},
+                 {title: "2023 People's Choice Poster @ RMIT/UniMelb 25+ Years of Information Retrieval Anniversary",},
+                 {title: "2023 Best Poster Paper @ Ubicomp",},
+                 {title: "2023 Ubicomp Student Challenge",},
+                {title: "2022 Runner-up (group) of Bushfire Grand Challenge Masterclass @ CSIRO Data61",},
+        services:["CHI 2024/2025/2026", "MobileHCI 2024", "SIGIR 2024/2025", "TOIS 2024/2025", "CHIIR 2025/2026", "WSDN 2026"}],
+       }
+
+
+       const compiled = Hogan.compile(template);
+       const rendered = compiled.render(profileData);
+
+       // Insert the rendered template into the DOM
+       document.getElementById('award').innerHTML = rendered;
 
     });
 
