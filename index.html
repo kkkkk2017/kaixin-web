@@ -512,84 +512,38 @@
        const exptemplate = await response.text();
 
        const experienceData = {
-        work: [
-            {
-                year: 2025,
-                teach: [
-                    {title: "Usability Lab Manager",
-                        company: "RMIT",
-                    description: "",
-                    },
-                { title: "Tutor", 
-                        company: "RMIT",
-                        starttime: "March 2025",
-                        endtime: "June 2025",
-                        description: ["Practical Data Science with Python", "Programming Fundamentals for Scientists", "Data Mining"]
-                    }, 
-                ]
-            },
-            {
-                year: 2024,
-                teach: [
-                    {title: "Usability Lab Manager",
-                        company: "RMIT",
-                    description: "",
-                    },
-                { title: "Tutor", 
-                        company: "RMIT",
-                        starttime: "March 2024",
-                        endtime: "June 2024",
-                        description: ["Advanced Programming for Data Science (python)"]
-                    }, 
-                ]
-            }, {
-                year: 2023,
-                teach: [
-                    {title: "Usability Lab Manager",
-                        company: "RMIT",
-                    description: "",
-                    },
-                { title: "Guest Lecture", 
-                    company: "RMIT",
-                    description: ["Geospatial Programming (python): Tips for Complex Data Analysis", "Eye-tracking for Online Buyer Behaviours"]
-                },
-                { title: "Tutor", 
-                        company: "RMIT",
-                        starttime: "June 2023",
-                        endtime: "June 2024",
-                        description: ["Advanced Programming for Data Science (python)"]
-                    }, 
-                ]
-            },
-            { year: 2022,
-                teach:  [
-                    { title: "Research Assistant", 
-                    company: "RMIT",
-                    starttime: "Sept.",
-                    endtime: "Dec. 2022",
-                    description: ["Project: understanding user’s information disclosure behaviour in emotions and contexts"]
-                },
-                    { title: "Tutor/Teaching Assistant", 
-                        company: "RMIT",
-                        description: ["Programming Bootcamp 1 (essential JAVA)", "Programming Bootcamp 2 (essential Python)", "Building IT System (IT-product development cycles)", ]
-                    },
-                    ],
-            },
-        {
-            year: 2019,
-            teach: [
-                {
-                    title: "Software Intern",
+           tutor:[
+               {title: "Tutor/Teaching Assistant", 
+                company: "RMIT",
+                subjects: [{title: "Data Mining (COSC2111)", term: "Semester 2, 2025"},
+                           {title:"Practical Data Science with Python (COSC2670)", term:"Semester 1, 2025"},
+                           {title:"Programming Fundamentals for Scientists (COSC2510)", term: "Semester 1, 2025",} 
+                           {title: "Advanced Programming on Data Science (COSC2410)", term: "Semester 2, 2023 & Semester 1, 2024"},
+                           {title: "Programming Bootcamp 1 – Python (COSC2801)", term: "Term 1, 2022"},
+                         {title: "Programming Bootcamp 2 – Java (COSC2802)", term: "Term 1, 2022"},
+                        {title: "Building IT System (COSC2250)", term: "Semester 1, 2022"}]
+            }, ],
+           guest:[{title: "Guest Lecture", 
+                company: "RMIT",
+                subjects: [{title: "Geospatial Programming (GEOM2157 & GEOM2159): Tips for Complex Data Analysis with Python"}, 
+                           {title: "Buyer Behavior (MKTG1339): Eye-tracking for Online Buyer Behaviors"},
+                           {title: "Usability Engineering (COSC1182): Design a Lab Study for: Quantify and measure online user behaviours and attitude changes in information-seeking using sensors"}]
+                }],
+        work: [ {title: "Usability Lab Manager",
+                company: "RMIT",
+                starttime: "Feb. 2023",
+                endtime: "", description:""},
+            {title: "Research Assistant",
+                company: "RMIT",
+                 starttime: "June 2022",
+                    endtime: "June 2024",
+                    description: ["Project: Understanding the Relation between Context, Users’ Emotion, and Information Disclosure Behavior"]},
+               {title: "Software Intern",
                     company: "YourAnswer.io",
-                    starttime: "April",
-                    endtime: "November",
+                    starttime: "April 2019",
+                    endtime: "Nov. 2019",
                     description: ['Project: Developing the backend software for customer reporting console using Python and Apache Spark (Big Data Framework), deployed on AWS EMR. The console interacted with AWS S3, and was tested with both UnitTest and Coverage Test. The programming environment was on Ubuntu.'],
-                }
-            ]
-
-        }
-        
-        ],
+                }],
             others: [
                  {year: 2025,
                     other: [
