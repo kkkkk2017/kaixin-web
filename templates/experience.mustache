@@ -11,22 +11,50 @@
         </div>
 
         <div class="col-2-3">
+            <div class="col-9-10  wow fadeInUp" data-wow-delay="0.3s">
+            {{#tutor}}
+            <div>
+            <h5><strong>{{title}} ({{company}})</strong></h5>
+                <div class="link-content">
+                <p><strong>Subjects:</strong></p><br>
+                {{#subjects}}
+                    <span>{{title}}:{term}}</span><br>
+                {{/subjects}}
+                </br>
+                </div>
+            </div>
+            {{/tutor}}
+            </div>
+
+         <div class="col-9-10  wow fadeInUp" data-wow-delay="0.3s">
             {{#work}}
-                <div class="col-9-10  wow fadeInUp" data-wow-delay="0.3s">
-                <h4 class="link-title"> {{year}} </h4>
-                {{#teach}}
-                <div>
-                <h5><strong>{{title}} ({{company}})</strong></h5>
-                    <div class="link-content">
-                    {{#description}}
-                        <span>{{.}}</span><br>
-                    {{/description}}
-                    </br>
-                    </div>
+            <div>
+            <h5><strong>{{title}} ({{company}})</strong></h5>
+                <div class="link-content">
+                <p>{{starttime}} - {{endtime}}</p><br>
+                {{#description}}
+                    <span>{{.}}</span><br>
+                {{/description}}
+                </br>
                 </div>
-                {{/teach}}
-                </div>
+            </div>
             {{/work}}
+            </div>
+
+            <div class="col-9-10  wow fadeInUp" data-wow-delay="0.3s">
+            {{#guest}}
+            <div>
+            <h5><strong>{{title}} ({{company}})</strong></h5>
+                <div class="link-content">
+                <p><strong>Subjects:</strong></p><br>
+                {{#subjects}}
+                    <span>{{title}}</span><br>
+                {{/subjects}}
+                </br>
+                </div>
+            </div>
+            {{/guest}}
+            </div>
         </div>
     </div>
 
