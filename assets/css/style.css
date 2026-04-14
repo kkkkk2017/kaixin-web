@@ -32,7 +32,7 @@
 
 #banner {
   background: url("/assets/images/photo.png") no-repeat center top;
-  background-size: 30% auto;
+  background-size: cover;
 }
 
 .profile-photo{
