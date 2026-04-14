@@ -35,10 +35,17 @@
   background-size: cover;
 }
 
-.profile-photo{
+/* .profile-photo{
   display: none; 
-}
+} */
 
+.profile-photo img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+}
 
 .mycontainer {
   display: flex;
@@ -49,9 +56,7 @@
 .mycontainer {
   text-align: center;
 }
-/* .profile-photo {
-  display: none;
-} */
+
 
 
 *, *:before, *:after {
