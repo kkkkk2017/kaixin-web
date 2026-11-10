@@ -64,6 +64,15 @@
   transform: scale(1.06); /* trim the image's own light edge */
 }
 
+/* Self-introduction spans the full width under the heading and photo */
+.banner-intro {
+  clear: both;
+}
+
+.banner-intro p {
+  text-align: justify;
+}
+
 /* Stack the photo above the text on small screens */
 @media (max-width: 767px) {
   #banner-content .mycontainer {
